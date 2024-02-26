@@ -1,4 +1,4 @@
-package com.socialapp.minisocialapp;
+package com.socialapp;
 
 import java.io.*;
 import jakarta.servlet.http.*;
