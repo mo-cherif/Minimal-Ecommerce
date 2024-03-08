@@ -9,7 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="187ef151-fa80-43a1-91f7-a90334cb620c" name="Changes" comment="" />
+    <list default="true" id="187ef151-fa80-43a1-91f7-a90334cb620c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minimalecommerce/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minimalecommerce/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/minimalecommerce/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/minimalecommerce/entities/Product.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,9 +34,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -63,7 +67,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Tomcat Server.Tomcat 10.1.18.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feat/models",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -126,7 +130,8 @@
       <option name="presentableId" value="Default" />
       <updated>1709920305061</updated>
       <workItem from="1709920306492" duration="884000" />
-      <workItem from="1709921442075" duration="548000" />
+      <workItem from="1709921442075" duration="687000" />
+      <workItem from="1709927064320" duration="567000" />
     </task>
     <servers />
   </component>
