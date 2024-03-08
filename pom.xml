@@ -28,7 +28,15 @@
       <artifactId>hibernate-core</artifactId>
       <version>6.0.2.Final</version>
     </dependency>
-    <dependency>
+
+      <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>8.0.33</version>
+      </dependency>
+
+      <dependency>
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
       <version>3.0.2</version>
