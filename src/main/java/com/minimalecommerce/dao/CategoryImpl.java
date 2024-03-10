@@ -1,6 +1,7 @@
 package com.minimalecommerce.dao;
 
 import com.minimalecommerce.entities.Category;
+import com.minimalecommerce.entities.Product;
 import com.minimalecommerce.utils.HibernateSession;
 import org.hibernate.Session;
 
@@ -12,35 +13,48 @@ public class CategoryImpl implements CategoryDAO {
     @Override
     public List<Category> getAll() {
         session.beginTransaction();
+        List<Category> categoryList = session.createQuery("from Category ", Category.class).list();
+        session.getTransaction().commit();
         session.close();
-        return null;
+        return categoryList;
     }
 
     @Override
     public Category getOne(int id) {
         session.beginTransaction();
+        Category category = session.find(Category.class, id);
         session.close();
-        return null;
+        return category;
     }
 
     @Override
     public Category delete(int id) {
         session.beginTransaction();
+        Category category = session.find(Category.class, id);
+        session.remove(category);
         session.close();
-        return null;
+        return category;
     }
 
     @Override
-    public Category update(int id) {
+    public Category update(int id, Category category) {
         session.beginTransaction();
+        Category findedCategory = session.find(Category.class,id);
+        findedCategory.setName(category.getName());
+        findedCategory.setDescription(category.getName());
+        session.update(findedCategory);
+
+        session.getTransaction().commit();
         session.close();
-        return null;
+        return findedCategory;
     }
 
     @Override
     public Category create(Category category) {
         session.beginTransaction();
+        session.persist(category);
+        session.getTransaction().commit();
         session.close();
-        return null;
+        return category;
     }
 }

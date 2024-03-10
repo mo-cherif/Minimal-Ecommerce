@@ -16,8 +16,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String title;
+    private double price;
     private boolean status;
+    private int quantity;
 
     @ManyToOne
     private Category category;
