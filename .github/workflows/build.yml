@@ -1,0 +1,12 @@
+name: Build Minimal Ecommerce Application written in java
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build with maven
+        run: mvn -B package --file pom.xml
