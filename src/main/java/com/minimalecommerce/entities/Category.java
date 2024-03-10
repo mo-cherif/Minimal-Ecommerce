@@ -6,9 +6,14 @@ import lombok.*;
 import java.util.ArrayList;
 
 @Entity
-@Table (name = "category")
+@Table(name = "category")
 
-@Getter @Setter @AllArgsConstructor @NoArgsConstructor @Builder @ToString
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@ToString
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
