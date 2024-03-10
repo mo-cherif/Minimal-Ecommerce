@@ -17,4 +17,4 @@ jobs:
           java-version: 17.0.9
 
       - name: Build with maven
-        run: mvn -B package pom.xml
+        run: mvn -B package
