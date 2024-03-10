@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build with maven
-        run: mvn -B package
+        run: mvn -B package pom.xml
