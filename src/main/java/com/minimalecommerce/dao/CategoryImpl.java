@@ -50,11 +50,12 @@ public class CategoryImpl implements CategoryDAO {
     }
 
     @Override
-    public Category create(Category category) {
+    public void create(Category category) {
         session.beginTransaction();
         session.persist(category);
+        category.getProductList().size();
         session.getTransaction().commit();
         session.close();
-        return category;
+
     }
 }

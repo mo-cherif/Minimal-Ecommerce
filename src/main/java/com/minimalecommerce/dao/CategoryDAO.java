@@ -14,5 +14,5 @@ public interface CategoryDAO {
 
     Category update(int id, Category category);
 
-    Category create(Category category);
+    void create(Category category);
 }

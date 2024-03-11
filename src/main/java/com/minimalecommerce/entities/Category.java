@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "category")
@@ -17,12 +18,12 @@ import java.util.ArrayList;
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
     private String name;
     private String description;
 
-    @OneToMany
-    private ArrayList<Product> productList = new ArrayList<Product>();
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<Product> productList = new ArrayList<Product>();
 
 
 }

@@ -17,6 +17,7 @@ public class Product {
     private int id;
     private String name;
     private double price;
+    @Column(name = "status", columnDefinition = "BOOLEAN")
     private boolean status;
     private int quantity;
 
