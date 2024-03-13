@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -22,4 +23,8 @@ public class Order {
 
     @ManyToOne
     private User user;
+
+    @OneToMany(mappedBy = "order", cascade =CascadeType.PERSIST )
+    private List<OrderLine> ordeLines;
+
 }

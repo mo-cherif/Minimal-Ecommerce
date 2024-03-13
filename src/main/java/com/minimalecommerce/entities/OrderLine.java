@@ -17,6 +17,7 @@ public class OrderLine {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int quantity;
+    private double price;
 
     @ManyToOne
     private Product product;

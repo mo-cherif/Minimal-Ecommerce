@@ -18,6 +18,6 @@ public class Profile {
     private String LastName;
     private String address;
 
-    @OneToOne(mappedBy = "")
+    @OneToOne
     User user;
 }
