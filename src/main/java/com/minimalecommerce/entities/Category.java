@@ -25,5 +25,4 @@ public class Category {
     @OneToMany(mappedBy = "category", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Product> productList = new ArrayList<Product>();
 
-
 }
