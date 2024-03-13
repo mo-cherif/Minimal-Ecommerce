@@ -1,8 +1,6 @@
 package com.minimalecommerce;
 
 import com.minimalecommerce.dao.CategoryImpl;
-import com.minimalecommerce.dao.ProductDAO;
-import com.minimalecommerce.dao.ProductImpl;
 import com.minimalecommerce.entities.Category;
 import com.minimalecommerce.entities.Product;
 

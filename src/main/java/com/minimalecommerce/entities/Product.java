@@ -3,6 +3,8 @@ package com.minimalecommerce.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "products")
 @Getter
@@ -23,5 +25,8 @@ public class Product {
 
     @ManyToOne
     private Category category;
+
+    @OneToMany(mappedBy = "product")
+    private List<OrderLine> orderLines;
 
 }
