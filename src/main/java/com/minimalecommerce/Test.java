@@ -22,8 +22,9 @@ public class Test {
                 .address("oasis casablanca")
                 .firstName("Mohamed")
                 .LastName("CHERIF")
+                .user(user)
                 .build();
-        profile.setUser(user);
+
         user.setProfile(profile);
 
         UserImpl user1 = new UserImpl();
