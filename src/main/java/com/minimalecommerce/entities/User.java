@@ -20,7 +20,7 @@ public class User {
     private String username;
     private String password;
 
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Orderx> orders;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
