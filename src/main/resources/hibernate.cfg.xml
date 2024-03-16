@@ -23,7 +23,7 @@
         <mapping class="com.minimalecommerce.entities.Category"/>
         <mapping class="com.minimalecommerce.entities.Product"/>
         <mapping class="com.minimalecommerce.entities.User"/>
-        <mapping class="com.minimalecommerce.entities.Order"/>
+        <mapping class="com.minimalecommerce.entities.Orderx"/>
         <mapping class="com.minimalecommerce.entities.OrderLine"/>
         <mapping class="com.minimalecommerce.entities.Profile"/>
 

@@ -23,6 +23,6 @@ public class OrderLine {
     private Product product;
 
     @ManyToOne
-    private Order order;
+    private Orderx order;
 
 }

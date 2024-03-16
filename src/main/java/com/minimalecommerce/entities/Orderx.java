@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
+@Table(name = "orders")
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -14,7 +15,7 @@ import java.util.List;
 @Setter
 @ToString
 
-public class Order {
+public class Orderx {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

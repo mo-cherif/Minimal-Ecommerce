@@ -21,7 +21,7 @@ public class User {
     private String password;
 
     @OneToMany
-    private List<Order> orders;
+    private List<Orderx> orders;
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     private Profile profile;
