@@ -15,7 +15,7 @@ public class Test {
                 .build();
 
         Profile profile = Profile.builder()
-                .address("oasis casablanca")
+                .address("somewhere")
                 .firstName("Mohamed")
                 .LastName("CHERIF")
                 .user(user)
